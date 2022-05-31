@@ -117,9 +117,9 @@
             </form>
 
             <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Сначала популярное</option>
-                <option value="expensive">Сначала дорогое</option>
-                <option value="cheap">Сначала дешёвое</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="cheap">Сначала дешёвые</option>
             </select>
             <a href="#" class="button">
                 <span class="visually-hidden">Показать карточки</span>
@@ -205,8 +205,12 @@
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
-            <span class="pagination-hotels-page">Гостиниц на странице:</span>
-            <button class="button pagination-hotels" type="button">4</button>
+            <select class="select-control" aria-label="Гостиниц на странице:">
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+          </select>
         </section>
     </main>
 
