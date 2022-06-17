@@ -5,7 +5,7 @@
     src: url("fonts/pt-sans-regular.woff2") format("woff2");
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: "PT Sans";
     font-style: normal;
@@ -13,7 +13,7 @@
     src: url("fonts/pt-sans-bold.woff2") format("woff2");
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: "PT Sans";
     font-style: italic;
@@ -21,7 +21,7 @@
     src: url("fonts/pt-sans-italic.woff2") format("woff2");
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: "PT Sans";
     font-style: italic;
@@ -29,7 +29,7 @@
     src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: "PT Sans Narrow";
     font-style: normal;
@@ -37,8 +37,16 @@
     src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2");
     font-display: swap;
   }
-  
+
+  html {
+    height: 100%;
+  }
+
   body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
@@ -118,18 +126,40 @@
     font-weight: 700;
     text-align: center;
     color: #ffffff;
-    background-color: #7DB54F; 
+    background-color: #7DB54F;
     text-decoration: none;
-    text-transform: uppercase; 
+    text-transform: uppercase;
   }
 
   .page-header {
     color: #000000;
-    background-color: #ffffff; 
+    background-color: #ffffff;
+  }
+
+  .navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-header-logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .navigation-list {
+    width: 500px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation-user {
+    max-width: 305px;
+    margin-left: auto;
   }
 
   .navigation-link {
-    font-family: "PT Sans", sans-serif; 
+    font-family: "PT Sans", sans-serif;
     line-height: 26px;
     font-weight: 700;
     text-align: center;
@@ -137,6 +167,10 @@
     background-color: #ffffff;
     text-decoration: none;
     text-transform: capitalize;
+  }
+
+  .main-container {
+    flex-grow: 1;
   }
 
   .main-index {
@@ -149,9 +183,18 @@
   .main-inner {
     color: #242424;
     background-color: #fbf7f4;
+    background-image: url("../images/catalog-background.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .page-container {
+    width: 1200px;
+    margin: 0 auto;
   }
 
   .advantages-all-list {
+    margin: 0;
+    padding: 0;
     text-align: center;
   }
 
@@ -183,6 +226,8 @@
   }
 
   .advantages-list {
+    margin: 0;
+    padding: 0;
     text-align: center;
   }
 
@@ -191,7 +236,7 @@
     background-color: #ffffff;
   }
 
-  .advantages-all-item-town {
+  .advantages-item-housing {
     background-color: rgba(131, 179, 211, 0.12);
   }
 
@@ -221,6 +266,22 @@
     text-transform: uppercase;
   }
 
+  .page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-social {
+    width: 160px;
+    margin-right: 42px;
+  }
+
+  .footer-contacts {
+    margin-left: auto;
+    max-width: 835px;
+  }
+
   .footer-contacts-phone {
     font-family: "PT Sans", sans-serif;
     font-size: 40px;
@@ -238,7 +299,7 @@
   .breadcrumbs {
     color: #ffffff;
   }
-  
+
   .breadcrumbs-link {
     color: inherit;
   }
@@ -250,7 +311,7 @@
     color: #ffffff;
     text-transform: capitalize;
   }
-  
+
   .control-label {
     font-weight: 400;
   }
@@ -263,11 +324,11 @@
   .product-card {
     background-color: #ffffff;
   }
-  
+
   .product-card-link {
     text-decoration: none;
   }
-  
+
   .product-card-title {
     font-weight: 700;
     color: #242424;
@@ -279,7 +340,7 @@
     font-weight: 400;
     color: #333333;
   }
-  
+
   .product-card-price {
     font-size: 18px;
     line-height: 21px;
@@ -290,7 +351,7 @@
   .pagination {
     background-color: #ffffff;
   }
-  
+
   .pagination-link {
     color: #ffffff;
     background-color: #82B3D3;
@@ -298,36 +359,13 @@
     line-height: 36px;
     font-weight: 700;
   }
-  
+
   .pagination-current {
     color: #242424;
     background-color: #ffffff;
   }
-  
+
   .hotel-sorting {
     color: #ffffff;
     background-color: #000000;
   }
-
-
-
-
-  
-
-
-
-
-  
-  
-
-
-
-
-
-  
-  
-
-
-  
-  
-  
