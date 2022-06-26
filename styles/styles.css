@@ -241,53 +241,31 @@
     background-color: #ffffff;
   }
 
-  .advantages-all-list {
+  .advantages-all-first {
+    display: flex;
+    color: #ffffff;
+    background-color: #82B3D3;
+  }
+
+  .advantages-all-first-text-column {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style-type: none;
-  }
-
-  .advantages-all-item {
-    color: #000000;
-    background-color: #ffffff;
     width: 400px;
     height: 384px;
   }
 
-  .advantages-all-item-town {
-    color: #ffffff;
-    background-color: #82B3D3;
-  }
-
-  .advantages-all-item-bridge {
-    color: #ffffff;
-    background-color: #82B3D3;
-  }
-
-  .advantages-all-item-area {
-    background-color: rgba(131, 179, 211, 0.12);
-  }
-
-  .advantages-all-item-road {
-    background-color: rgba(131, 179, 211, 0.2);
-  }
-
-  .advantages-all-item-tourists {
-    background-color: rgba(131, 179, 211, 0.12);
-  }
-
-  .advantages-all-title {
+  .advantages-all-first-title {
     margin-top: 92px;
     margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
   }
 
-  .advantages-all-number {
+  .advantages-all-first-number {
     margin-bottom: 30px;
     font-weight: 400;
     font-size: 18px;
@@ -295,7 +273,7 @@
     text-align: center;
   }
 
-  .advantages-all-description {
+  .advantages-all-first-description {
     margin: 0;
     font-weight: 400;
     font-size: 18px;
@@ -305,38 +283,156 @@
 
   .advantages-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    text-align: center;
     list-style-type: none;
   }
 
-  .advantages-item {
-    font-weight: 400;
+  .advantages-item-housing {
+    color: #000000;
+    background-color: #f0f6fa;
+    width: 400px;
+    height: 384px;
+  }
+
+  .advantages-item-food {
     color: #000000;
     background-color: #ffffff;
     width: 400px;
     height: 384px;
   }
 
-  .advantages-item-housing {
+  .advantages-item-souvenir {
+    color: #000000;
     background-color: #f0f6fa;
+    width: 400px;
+    height: 384px;
   }
 
-  .advantages-item-souvenir {
-    background-color: #f0f6fa;
+  .advantages-text-column-housing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages-text-column-food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages-text-column-souvenir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .advantages-title {
     margin-top: 30px;
     margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   .advantages-description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .advantages-all-second {
+    display: flex;
+    color: #ffffff;
+    background-color: #82B3D3;
+  }
+
+  .advantages-all-second-text-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 384px;
+  }
+
+  .advantages-all-second-title {
+    margin-top: 92px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
+  .advantages-all-second-number {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .advantages-all-second-description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .advantages-all-last-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .advantages-all-last-item-area {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
+    height: 384px;
+  }
+
+  .advantages-all-last-item-road {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.2);
+    width: 400px;
+    height: 384px;
+  }
+
+  .advantages-all-last-item-tourists {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
+    height: 384px;
+  }
+
+  .advantages-all-last-title {
+    margin-top: 92px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .advantages-all-last-number {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .advantages-all-last-description {
     margin: 0;
     font-weight: 400;
     font-size: 18px;
