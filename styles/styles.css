@@ -594,27 +594,32 @@
   }
 
   .product-card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 211px 28px 21px 37px 37px;
+    gap: 16px 20px;
+    grid-template-areas:
+      "product-card-image-link product-card-image-link"
+      "product-card-title-link product-card-title-link"
+      "product-card-hotel product-card-price"
+      "product-card-button product-card-favorites-button"
+      "hotel-classes-list product-card-ranking";
     background-color: #ffffff;
   }
 
-  .product-card-content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 20px;
+  .product-card-image-link {
+    background-color: #ffffff;
   }
 
-  .product-card-content-left-column {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .product-card-content-right-column {
-    display: flex;
-    flex-direction: column;
-  }
+  .product-card-image-link { grid-area: product-card-image-link; }
+  .product-card-title-link { grid-area: product-card-title-link; }
+  .product-card-hotel { grid-area: product-card-hotel; }
+  .product-card-price { grid-area: product-card-price; }
+  .product-card-button { grid-area: product-card-button; }
+  .product-card-favorites-button { grid-area: product-card-favorites-button; }
+  .hotel-classes-list { grid-area: hotel-classes-list; }
+  .product-card-ranking { grid-area: product-card-ranking; }
 
   .product-card-image {
     object-fit: contain;
@@ -623,7 +628,6 @@
   .product-card-title-link {
     text-decoration: none;
     margin-top: 16px;
-    margin-bottom: 16px;
   }
 
   .product-card-title {
@@ -636,7 +640,6 @@
     line-height: 21px;
     font-weight: 400;
     color: #333333;
-    margin-bottom: 16px;
   }
 
   .product-card-button {
@@ -649,7 +652,6 @@
     background-color: #756157;
     text-decoration: none;
     text-transform: uppercase;
-    margin-bottom: 16px;
   }
 
   .hotel-classes-list {
@@ -664,7 +666,6 @@
     line-height: 21px;
     font-weight: 400;
     color: #333333;
-    margin-bottom: 16px;
   }
 
   .product-card-favorites-button {
@@ -677,7 +678,6 @@
     background-color: #82B3D3;
     text-decoration: none;
     text-transform: uppercase;
-    margin-bottom: 16px;
   }
 
   .product-card-added-favorites-button {
@@ -690,7 +690,6 @@
     background-color: #7DB54F;
     text-decoration: none;
     text-transform: uppercase;
-    margin-bottom: 16px;
   }
 
   .product-card-ranking {
@@ -701,8 +700,6 @@
     text-transform: uppercase;
     color: #333333;
     background-color: #F2F2F2;
-    margin-bottom: 20px;
-    margin-left: auto;
   }
 
   .pagination-container {
