@@ -67,9 +67,73 @@
 
   .button {
     font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #82B3D3;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .product-card-active-button {
+    background-color: #7DB54F;
+  }
+
+  .product-card-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .navigation-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .search-hotel-button {
+    font-family: inherit;
+    font-weight: 700;
     font-size: 20px;
     line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .newsletter-button {
+    font-family: inherit;
     font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #82B3D3;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .newsletter-catalog-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
     text-align: center;
     color: #ffffff;
     background-color: #82B3D3;
@@ -82,69 +146,9 @@
     background-color: #ffffff;
   }
 
-  .navigation-button {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    background-color: #756157;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .search-hotel-button {
-    font-family: inherit;
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    background-color: #756157;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
   .button-light {
-    color: #242424;
+    color: #000000;
     background-color: #ffffff;
-  }
-
-  .product-card-button {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    background-color: #756157;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .product-card-favorites-button {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    background-color: #82B3D3;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .product-card-added-favorites-button {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    background-color: #7DB54F;
-    text-decoration: none;
-    text-transform: uppercase;
   }
 
   .page-header {
@@ -595,6 +599,7 @@
 
   .sorting-container {
     display: flex;
+    justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 56px;
     color: #000000;
@@ -604,12 +609,6 @@
   .sorting-container .button {
     width: 48px;
     height: 48px;
-  }
-
-  .product-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
 
   .catalog-filter-title {
@@ -624,12 +623,42 @@
     font-weight: 400;
   }
 
+  .product-list {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 96px;
+    padding: 0;
+    column-gap: 58px;
+  }
+
   .product-card {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 211px 28px 21px 37px 37px;
+    gap: 16px 20px;
+    grid-template-areas:
+      "product-card-image product-card-image"
+      "product-card-title product-card-title"
+      "product-card-hotel product-card-price"
+      "product-card-button button"
+      "hotel-classes-list product-card-ranking";
     background-color: #ffffff;
   }
 
-  .product-card-link {
-    text-decoration: none;
+  .product-card-image { grid-area: product-card-image; }
+  .product-card-title { grid-area: product-card-title; }
+  .product-card-hotel { grid-area: product-card-hotel; }
+  .product-card-price { grid-area: product-card-price; }
+  .product-card-button { grid-area: product-card-button; }
+  .button { grid-area: button; }
+  .hotel-classes-list { grid-area: hotel-classes-list; }
+  .product-card-ranking { grid-area: product-card-ranking; }
+
+  .product-card-image {
+    object-fit: contain;
   }
 
   .product-card-title {
@@ -651,11 +680,21 @@
     color: #333333;
   }
 
-  .hotel-classes-item {
+  .hotel-classes-list {
     display: flex;
     margin: 0;
     padding: 0;
     list-style-type: none;
+  }
+
+  .product-card-ranking {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    background-color: #F2F2F2;
   }
 
   .pagination-container {
