@@ -81,6 +81,7 @@
     background-color: #82B3D3;
     text-decoration: none;
     text-transform: uppercase;
+    width: 140px;
   }
 
   .button:hover {
@@ -139,6 +140,10 @@
     background-color: #756157;
     text-decoration: none;
     text-transform: uppercase;
+    width: 160px;
+    margin-top: 14px;
+    margin-right: 70px;
+    margin-bottom: 14px;
   }
 
   .navigation-button:hover  {
@@ -175,6 +180,7 @@
     background-color: #756157;
     text-decoration: none;
     text-transform: uppercase;
+    width: 574px;
   }
 
   .search-hotel-button:hover  {
@@ -211,6 +217,7 @@
     background-color: #756157;
     text-decoration: none;
     text-transform: uppercase;
+    width: 140px;
   }
 
   .product-card-button:hover  {
@@ -247,6 +254,7 @@
     background-color: #82B3D3;
     text-decoration: none;
     text-transform: uppercase;
+    width: 200px;
   }
 
   .newsletter-button:hover {
@@ -283,6 +291,7 @@
     background-color: #82B3D3;
     text-decoration: none;
     text-transform: uppercase;
+    width: 200px;
   }
 
   .newsletter-catalog-button:hover {
@@ -430,12 +439,16 @@
     align-items: center;
     background-image: url("../images/index-background.jpg");
     background-repeat: no-repeat;
+    padding-top: 51px;
+    padding-bottom: 82px;
   }
 
   .slogan {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 63px;
+    padding-bottom: 90px;
   }
 
   .slogan-clarification {
@@ -446,6 +459,7 @@
     text-transform: uppercase;
     color: #000000;
     background-color: #ffffff;
+    margin-bottom: 31px;
   }
 
   .slogan-reasons {
@@ -654,6 +668,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 91px;
+    padding-bottom: 93px;
   }
 
   .hotel-search-interest {
@@ -664,6 +680,7 @@
     text-transform: uppercase;
     color: #000000;
     background-color: #ffffff;
+    margin-bottom: 29px;
   }
 
   .hotel-search-interest-desc {
@@ -673,6 +690,7 @@
     text-align: center;
     color: #333333;
     background-color: #ffffff;
+    margin-bottom: 56px;
   }
 
   .newsletter {
@@ -681,6 +699,8 @@
     align-items: center;
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 
   .newsletter-title {
@@ -690,6 +710,7 @@
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
+    margin-bottom: 29px;
   }
 
   .newsletter-page-subscribe {
@@ -698,12 +719,15 @@
     line-height: 26px;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 46px;
   }
 
   .newsletter-catalog {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 
   .newsletter-catalog-title {
@@ -713,6 +737,7 @@
     text-align: center;
     color: #000000;
     text-transform: uppercase;
+    margin-bottom: 29px;
   }
 
   .newsletter-catalog-page-subscribe {
@@ -721,6 +746,7 @@
     line-height: 26px;
     text-align: center;
     color: #333333;
+    margin-bottom: 46px;
   }
 
   .page-footer {
@@ -728,10 +754,11 @@
     font-weight: 400;
     color: #000000;
     background-color: #ffffff;
-  }
+    padding-top: 40px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+    padding-left: 70px;
 
-  .page-footer a {
-    color: #000000;
   }
 
   .page-footer-container {
@@ -785,11 +812,11 @@
   }
 
   .footer-contacts {
-    margin-left: auto;
-    max-width: 876,5px;
+    width: 720px;
+    margin-right: 41,5px;
   }
 
-  .footer-contacts-phone {
+  .footer-contacts-link {
     display: block;
     position: relative;
     width: 331px;
@@ -800,28 +827,30 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
   }
 
-  .footer-contacts-phone:hover {
+  .footer-contacts-link:hover {
     color: #756157;
   }
 
-  .footer-contacts-phone:focus {
+  .footer-contacts-link:focus {
     color: #756157;
   }
 
-  .footer-contacts-phone:active  {
+  .footer-contacts-link:active  {
     color: rgba(117, 97, 87, 0.3);
   }
 
-  .footer-contacts-link {
+  .footer-contacts-html-academy-link {
     display: block;
     position: relative;
     color: #000000;
     background-color: #ffffff;
   }
 
-  footer-contacts-icon {
+  footer-contacts-html-academy-icon {
     position: absolute;
     top: 0;
     right: 0;
@@ -831,15 +860,15 @@
     fill: #000000;
   }
 
-  footer-contacts-icon:hover {
+  footer-contacts-html-academy-icon:hover {
     fill: #756157;
   }
 
-  footer-contacts-icon:focus {
+  footer-contacts-html-academy-icon:focus {
     fill: #756157;
   }
 
-  footer-contacts-icon:active {
+  footer-contacts-html-academy-icon:active {
     fill: rgba(117, 97, 87, 0.3);
   }
 
