@@ -372,6 +372,22 @@
     color: rgba(117, 97, 87, 0.3);
   }
 
+  .navigation-link-number::after {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    content: "12";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #7DB54F;
+  }
+
   navigation-link-current-index::before {
     position: absolute;
     top: 65px;
@@ -787,6 +803,8 @@
     position: relative;
     color: #000000;
     background-color: #ffffff;
+    min-width: 47px;
+    min-height: 40px;
   }
 
   .footer-social-icon {
@@ -895,13 +913,14 @@
 
   .breadcrumbs {
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    position: relative;
   }
 
   .breadcrumbs-item {
-    position: relative;
     margin-right: 25px;
   }
 
