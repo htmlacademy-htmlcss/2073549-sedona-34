@@ -372,11 +372,10 @@
     color: rgba(117, 97, 87, 0.3);
   }
 
-  .navigation-link-number::after {
-    position: absolute;
+  .navigation-number {
+    display: block;
     top: 15px;
     left: 24px;
-    content: "12";
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -932,7 +931,7 @@
     width: 6px;
     height: 8px;
     fill: #ffffff;
-    background-image: url("../images/breadcrumbs.svg");
+    background-image: url("../images/arrow-right.svg");
     background-repeat: no-repeat;
   }
 
@@ -1009,6 +1008,12 @@
     font-weight: 700;
     color: #ffffff;
     text-transform: capitalize;
+  }
+
+  .catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
 
   .control-label {
