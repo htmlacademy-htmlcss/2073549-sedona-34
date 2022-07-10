@@ -385,6 +385,7 @@
     text-align: center;
     color: #ffffff;
     background-color: #7DB54F;
+    z-index: 8;
   }
 
   navigation-link-current-index::before {
@@ -799,15 +800,11 @@
 
   .footer-social-link {
     display: block;
-    position: relative;
     color: #000000;
     background-color: #ffffff;
-    min-width: 47px;
-    min-height: 40px;
   }
 
   .footer-social-icon {
-    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -862,13 +859,11 @@
 
   .footer-contacts-html-academy-link {
     display: block;
-    position: relative;
     color: #000000;
     background-color: #ffffff;
   }
 
   footer-contacts-html-academy-icon {
-    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -921,18 +916,6 @@
 
   .breadcrumbs-item {
     margin-right: 25px;
-  }
-
-  .breadcrumbs-item:first-child::after {
-    position: absolute;
-    top: 8 px;
-    left: 22px;
-    content: "";
-    width: 6px;
-    height: 8px;
-    fill: #ffffff;
-    background-image: url("../images/arrow-right.svg");
-    background-repeat: no-repeat;
   }
 
   .breadcrumbs-link {
