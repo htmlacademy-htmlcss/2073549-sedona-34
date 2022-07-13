@@ -746,18 +746,6 @@
     width: 600px;
   }
 
-  .newsletter-subtitle {
-    display: block;
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: none;
-  }
-
   .newsletter-catalog {
     display: flex;
     flex-direction: column;
@@ -793,18 +781,6 @@
 
   .newsletter-catalog-email .field {
     width: 600px;
-  }
-
-  .newsletter-catalog-subtitle {
-    display: block;
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: none;
   }
 
   .page-footer {
