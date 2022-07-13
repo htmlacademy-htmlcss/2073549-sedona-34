@@ -746,6 +746,18 @@
     width: 600px;
   }
 
+  .newsletter-subtitle {
+    display: block;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
   .newsletter-catalog {
     display: flex;
     flex-direction: column;
@@ -781,6 +793,18 @@
 
   .newsletter-catalog-email .field {
     width: 600px;
+  }
+
+  .newsletter-catalog-subtitle {
+    display: block;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
   }
 
   .page-footer {
@@ -870,25 +894,23 @@
     color: rgba(117, 97, 87, 0.3);
   }
 
-  .footer-contacts-html-academy-link {
+  .page-footer-logo {
     display: block;
-    color: #000000;
-    background-color: #ffffff;
   }
 
-  footer-contacts-html-academy-icon {
+  .page-footer-logo svg {
     fill: #000000;
   }
 
-  footer-contacts-html-academy-icon:hover {
+  .page-footer-logo:hover svg {
     fill: #756157;
   }
 
-  footer-contacts-html-academy-icon:focus {
+  .page-footer-logo:focus svg {
     fill: #756157;
   }
 
-  footer-contacts-html-academy-icon:active {
+  .page-footer-logo:active svg {
     fill: rgba(117, 97, 87, 0.3);
   }
 
@@ -999,12 +1021,6 @@
 
   .auth-form-field-tenants .field-tenants {
     width: 133px;
-    background-image: url("../images/line.svg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-image: url("../images/cross.svg");
-    background-repeat: no-repeat;
-    background-position: right;
   }
 
   .auth-form-button {
