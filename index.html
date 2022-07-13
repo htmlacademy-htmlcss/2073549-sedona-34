@@ -131,7 +131,7 @@
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-page-subscribe">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="newsletter-email">Email</label>
+              <label class="visually-hidden" for="newsletter-email">Email</label>
               <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
               <button class="newsletter-button" type="submit">
               <h3 class="newsletter-subtitle">Подписаться</h3>
@@ -188,5 +188,47 @@
         </section>
       </div>
     </footer>
-    </body>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group auth-form-user-options">
+              <label class="auth-form-label" for="auth-arrival-date">Дата заезда:</label>
+              <input class="auth-form-field field" type="text" id="auth-arrival-date" name="auth-arrival-date" placeholder="27 апреля 2020">
+              <p class="auth-form-send-past">Мы не можем отправить вас в прошлое.</p>
+            </p>
+            <p class="field-group auth-form-user-options">
+              <label class="auth-form-label" for="auth-departure-date">Дата выезда:</label>
+              <input class="auth-form-field field" type="text" id="auth-departure-date" name="auth-departure-date" placeholder="1 сентября 2021">
+              <p class="auth-form-free-rooms">На эти даты есть свободные номера. Пока есть.</p>
+            </p>
+            <p class="field-group auth-form-user-options">
+              <label class="auth-form-label" for="auth-adults">Взрослые:</label>
+              <input class="auth-form-field-tenants field-tenants" type="text" id="auth-adults" name="auth-adults" placeholder="2">
+            </p>
+            <p class="field-group auth-form-user-options">
+              <span class="auth-form-label">
+                <label class="auth-form-label" for="auth-children">Дети:</label>
+                <span class="tooltip">
+                  <span class="tooltip-toggle" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="3" height="12" viewBox="0 0 3 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M.11 0h2v2h-2V0Zm2 12h-2V3h2v9Z"/>
+                    </svg>
+                  </span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <input class="auth-form-field-tenants  field-tenants" type="text" id="auth-children" name="auth-children" placeholder="1">
+            </p>
+            <button class="button auth-form-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
